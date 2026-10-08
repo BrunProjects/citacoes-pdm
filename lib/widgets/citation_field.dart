@@ -23,10 +23,7 @@ class CitationField extends StatelessWidget {
       children: [
         Text(
           label,
-          style: const TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w600,
-          ),
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
         ),
         const SizedBox(height: 8),
         TextField(
@@ -35,11 +32,6 @@ class CitationField extends StatelessWidget {
           obscureText: obscureText,
           decoration: InputDecoration(
             hintText: hint,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            filled: true,
-            fillColor: Colors.white,
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 14,

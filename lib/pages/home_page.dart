@@ -7,9 +7,7 @@ class HomePage extends StatelessWidget {
   void _goToForm(BuildContext context, String type) {
     Navigator.push(
       context,
-      MaterialPageRoute(
-        builder: (context) => CitationFormPage(tipo: type),
-      ),
+      MaterialPageRoute(builder: (context) => CitationFormPage(tipo: type)),
     );
   }
 
@@ -26,10 +24,7 @@ class HomePage extends StatelessWidget {
         ),
         child: Text(
           type.toUpperCase(),
-          style: const TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
       ),
     );
@@ -53,18 +48,15 @@ class HomePage extends StatelessWidget {
                 const Text(
                   'Academic Citation Generator',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 10),
-                const Text(
+                Text(
                   'Gerador de Citações Acadêmicas',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 22,
-                    color: Colors.indigo,
+                    color: Theme.of(context).colorScheme.secondary,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
